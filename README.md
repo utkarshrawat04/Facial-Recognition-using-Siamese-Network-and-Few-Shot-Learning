@@ -5,9 +5,9 @@ This project implements a **Facial Recognition System** using a **Siamese Neural
 ---
 
 ## 👨‍💻 Authors
-- Atharva Pande  
-- Tanish Punamiya  
-- Utkarsh Rawat  
+- Atharva Pande : https://github.com/yoboi1234673
+- Tanish Punamiya : https://github.com/Tanish1302  
+- Utkarsh Rawat  : https://github.com/utkarshrawat04
 
 ---
 
@@ -30,7 +30,7 @@ This project implements a **Facial Recognition System** using a **Siamese Neural
 ├── app.py                               # Streamlit app for verification
 ├── Siamese_VGG_83.pth                   # Trained model weights (load locally)
 ├── README.md                            # You're here!
-└── ATML_EC_Project.pdf                  # Detailed project report
+└── GAN                                  # GAN Folder
 ```
 
 ---
@@ -130,11 +130,27 @@ support_set/
 
 ---
 
-## 💡 Future Improvements
+## 🧬 Role of GANs in Facial Recognition
 
-- Use attention-based transformers for better generalization.
-- Deploy using Docker or expose an API with Flask/FastAPI.
-- Optimize for mobile with ONNX or TensorFlow Lite.
+Generative Adversarial Networks (GANs) are a powerful class of deep generative models that consist of two competing networks: a **Generator** and a **Discriminator**. While GANs are not the core component in our current Siamese Network-based system, they hold substantial potential for augmenting facial recognition tasks — especially under **few-shot learning** constraints.
+
+### 🔄 CycleGAN and PatchGAN in This Context
+
+- **CycleGAN** can be used for **unpaired image-to-image translation**, which enables generating new facial expressions, angles, or lighting conditions from limited identity samples — without needing paired training data.
+  
+- **PatchGAN** focuses on classifying whether *patches* of an image are real or fake rather than the entire image, making it particularly useful for **fine-grained feature generation**. This is ideal for improving facial texture quality in augmented datasets.
+
+### 🚀 Future Work with GANs
+
+In future iterations of this project, GANs could be leveraged for:
+- **Expanding support sets** with synthetic variations for better generalization
+- Generating realistic but unseen facial expressions or lighting to enrich training pairs
+- Improving recognition robustness under domain shifts (e.g., different cameras or lighting)
+- Data augmentation in scenarios where data privacy restricts real image collection
+
+Integrating CycleGAN or PatchGAN can significantly enhance the diversity and realism of training data, which in turn improves the performance of verification models under constrained-data regimes.
+
+---
 
 
 
