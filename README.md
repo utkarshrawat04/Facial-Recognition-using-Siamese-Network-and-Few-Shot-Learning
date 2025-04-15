@@ -115,6 +115,7 @@ support_set/
 
   
 - **ROC-AUC Score**: 0.91
+  
 ![WhatsApp Image 2025-04-15 at 2 40 36 PM](https://github.com/user-attachments/assets/d075365a-d3d3-4a88-881e-42b9209713bf)
 
 
@@ -123,6 +124,8 @@ support_set/
   - False Negatives: 819  
   - False Positives: 816  
   - True Negatives: 4135
+ 
+    
 ![WhatsApp Image 2025-04-15 at 2 40 45 PM](https://github.com/user-attachments/assets/0ba79003-580b-41d6-b64d-077d38ac846e)
 
 ---
